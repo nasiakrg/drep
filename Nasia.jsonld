@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Nasia"
+    },
+    "motivations": {
+      "@value": "I want to become a DRep because I believe in the importance of community-driven governance and the opportunities Cardano offers for shaping a decentralized future. By serving as a DRep, I can help ensure that a broad range of voices is represented in the decision-making process, particularly those who may not have the time or resources to participate actively in every vote. In terms of experience, I’ve worked in roles that involve leadership, decision-making, and stakeholder management. These experiences have honed my ability to critically evaluate proposals and balance competing interests. My motivation is driven by a commitment to fairness and ensuring that proposals with the potential to benefit the ecosystem and its participants are supported."
+    },
+    "objectives": {
+      "@value": "As a DRep, I believe in the potential of decentralized governance to drive meaningful change in the Cardano ecosystem. I aim to ensure that the interests of the community, especially smaller stakeholders, are represented in key decisions. I believe in a transparent and inclusive governance model where all voices can be heard and contribute to the growth of Cardano. My primary goal is to empower ADA holders by representing their interests, ensuring their voting power is used effectively."
+    },
+    "paymentAddress": {
+      "@value": "addr1q8pgdulfylzv334j7dnh99t6amkpxw2u246lv8v6mmrke2q8dx6tum3n0sfmhw2dvwvw4wdh2yvz7tfckvvpydxly6psu6jxsh"
+    },
+    "qualifications": {
+      "@value": "I bring valuable experience from my involvement in the Cardano Catalyst project, where I have served as both a Community Reviewer (since Fund 6) and a Veteran Advisor (since Fund 7). These roles have given me a deep understanding of the proposal evaluation process, as well as insights into what makes a project viable and beneficial to the ecosystem. Thus, I’ve learned how to assess proposals critically, considering both the technical feasibility and the long-term impact on Cardano. \n\nI believe i should also refer to the fact that I bring a unique perspective as a professional dietitian. My background in healthcare has given me a strong foundation in critical thinking, evidence-based decision-making, and ethical responsibility, all of which are crucial for evaluating proposals and making sound governance decisions. "
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/CardanoGreek"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Label"
+        },
+        "uri": {
+          "@value": "https://app.tempo.vote/drep-profile"
+        }
+      }
+    ]
+  }
+}
